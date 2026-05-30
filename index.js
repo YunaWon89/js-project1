@@ -54,6 +54,9 @@ search.addEventListener("input", async () => {
         card.remove();
       });
       repoList.append(card);
+      search.value = "";
+      suggestions.innerHTML = "";
+      suggestions.style.display = "none";
     });
   });
 });
